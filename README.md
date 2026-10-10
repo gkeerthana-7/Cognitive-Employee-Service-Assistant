@@ -1,17 +1,20 @@
 # Cognitive Employee Service Assistant
 
 ## Project Overview
+
 A Python-based employee leave management service built using FastAPI. It provides REST API endpoints to check employee leave balances, submit leave requests, and approve or reject requests.
 
 ## Technologies Used
+
 - Python
-- FastAPI
 - REST APIs
 - JSON
 - Pytest
+- FastAPI
 - Swagger UI
 
 ## Features
+
 - Check employee leave balance
 - Submit employee leave requests
 - Approve leave requests and update leave balances
@@ -20,6 +23,7 @@ A Python-based employee leave management service built using FastAPI. It provide
 - Handle invalid employee IDs and requests
 
 ## Sample Employees
+
 - E101 – Ravi
 - E102 – Priya
 
@@ -35,7 +39,39 @@ A Python-based employee leave management service built using FastAPI. It provide
 
 ## Run the Project
 
-Install dependencies:
+### 1. Install Dependencies
 
 ```bash
 pip install fastapi uvicorn pytest
+```
+
+### 2. Start the Application
+
+```bash
+python -m uvicorn app:app --reload
+```
+
+### 3. Open Swagger UI
+
+Open the following URL in your browser:
+
+http://127.0.0.1:8000/docs
+
+Use Swagger UI to explore and test the API endpoints.
+
+## Run Tests
+
+Run the following command in the terminal:
+
+```bash
+python -m pytest -v
+```
+
+The project includes automated tests for the employee leave management APIs.
+
+## Future Enhancements
+
+- Integrate a conversational assistant using IBM watsonx Assistant
+- Explore workflow automation using IBM watsonx Orchestrate
+- Add database support for persistent storage
+- Implement employee authentication
